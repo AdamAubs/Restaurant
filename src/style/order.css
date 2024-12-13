@@ -1,0 +1,48 @@
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title styling */
+.order-info {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #563635; /* Dark text color */
+}
+
+/* Styling the iframe container */
+.order-form-container iframe {
+  width: 100%; /* Make iframe responsive */
+  height: 600px; /* Adjust height as needed */
+  border: none; /* Remove iframe border */
+  margin-top: 20px;
+}
+
+.order-form-container {
+  width: 100%; /* Matches parent width */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .order-container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .order-form-container iframe {
+    height: 100vh;
+  }
+}
